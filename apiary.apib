@@ -1,0 +1,48 @@
+FORMAT: 1A
+HOST: https://invacaretest-a493523.integration.us2.oraclecloud.com/integration/flowapi/rest/VIEW_CUSTOMER_DATA/v01
+
+# Fetch Customer
+
+Fetch Customer is an API which provides customer data from the database using required parameters.
+
+Customer ID: Customer ID, for which the customer details will be provided back.  
+
+## Customer Details [/view_customer_data{?CustomerID}]
+
+### Get Customer Details [GET]
+
+Provides with customer details based on a valid input ID
+
++ Parameters
+
+  + CustomerID (required, string )
+
++ Response 200 (application/json)
+
+        {
+            "CustomerInfo": [
+                {
+                    "CustomerNumber": "",
+                    "CustomerID": "",
+                    "CustomerName": "",
+                    "OrgID": "",
+                    "Address1": "",
+                    "Address2": "",
+                    "City": "",
+                    "ZipCode": "",
+                    "State": ""
+                },
+                {
+                    "CustomerNumber": "",
+                    "CustomerID": "",
+                    "CustomerName": "",
+                    "OrgID": "",
+                    "Address1": "",
+                    "Address2": "",
+                    "City": "",
+                    "ZipCode": "",
+                    "State": ""
+                }
+            ],
+            "StatusMsg": ""
+        }
